@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAIS3110-OAuth-Brendon-Lapp", "BAIS3110-OAuth-Brendon-Lapp\BAIS3110-OAuth-Brendon-Lapp.csproj", "{77C61C45-14FE-4D25-8E63-08D5D80F98AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77C61C45-14FE-4D25-8E63-08D5D80F98AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77C61C45-14FE-4D25-8E63-08D5D80F98AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77C61C45-14FE-4D25-8E63-08D5D80F98AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77C61C45-14FE-4D25-8E63-08D5D80F98AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31CF4DE8-60D6-4CF1-92BC-71AA1831756F}
+	EndGlobalSection
+EndGlobal

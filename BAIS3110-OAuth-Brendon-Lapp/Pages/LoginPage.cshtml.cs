@@ -1,18 +1,18 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.Extensions.Logging;
 
+//Namespaces added
 using Microsoft.AspNetCore.Authentication;
 using Octokit;
 using Octokit.Internal;
 
 namespace BAIS3110_OAuth_Brendon_Lapp.Pages
 {
-    public class IndexModel : PageModel
+    public class LoginPageModel : PageModel
     {
         public IReadOnlyList<Repository> Repositories { get; set; }
         public IReadOnlyList<Repository> StarredRepos { get; set; }

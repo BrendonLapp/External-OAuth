@@ -9,6 +9,17 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
+//Name Spaces added for GitHub OAuth
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Security.Claims;
+using System.Text.Json;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.OAuth;
+using Microsoft.AspNetCore.Http;
+using Newtonsoft.Json.Linq;
+
 namespace BAIS3110_OAuth_Brendon_Lapp
 {
     public class Startup
@@ -24,6 +35,43 @@ namespace BAIS3110_OAuth_Brendon_Lapp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+
+            //services added for Github OAuth
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = "GitHub";
+            })
+                .AddCookie()
+                .AddOAuth("GitHub", options =>
+                {
+                    options.ClientId = "5014b4da4378d9e8a5e0";
+                    options.ClientSecret = "4cde9f08de1275ef9c95b794e913a4a6165764fa";
+                    options.CallbackPath = new PathString("/github-oauth");
+                    options.AuthorizationEndpoint = "Https://github.com/login/oauth/authorize";
+                    options.TokenEndpoint = "https://github.com/login/oauth/access_token";
+                    options.UserInformationEndpoint = "https://api.github.com/user";
+                    options.SaveTokens = true;
+                    options.ClaimActions.MapJsonKey(ClaimTypes.NameIdentifier, "id");
+                    options.ClaimActions.MapJsonKey(ClaimTypes.Name, "name");
+                    options.ClaimActions.MapJsonKey("urn:github:login", "login");
+                    options.ClaimActions.MapJsonKey("urn:github:url", "html_url");
+                    options.ClaimActions.MapJsonKey("urn:github:avatar", "avatar_url");
+                    options.Events = new OAuthEvents
+                    {
+                        OnCreatingTicket = async context =>
+                        {
+                            var request = new HttpRequestMessage(HttpMethod.Get, context.Options.UserInformationEndpoint);
+                            request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                            request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", context.AccessToken);
+                            var response = await context.Backchannel.SendAsync(request, HttpCompletionOption.ResponseHeadersRead, context.HttpContext.RequestAborted);
+                            response.EnsureSuccessStatusCode();
+                            var json = JsonDocument.Parse(await response.Content.ReadAsStringAsync());
+                            context.RunClaimActions(json.RootElement);
+                        }
+                    };
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,11 +93,15 @@ namespace BAIS3110_OAuth_Brendon_Lapp
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapControllers();
                 endpoints.MapRazorPages();
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller}/{action=Index}/{id?}");
             });
         }
     }

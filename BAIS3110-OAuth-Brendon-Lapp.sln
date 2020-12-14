@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAIS3110-OAuth-Brendon-Lapp", "BAIS3110-OAuth-Brendon-Lapp\BAIS3110-OAuth-Brendon-Lapp.csproj", "{77C61C45-14FE-4D25-8E63-08D5D80F98AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BAIS3110-OAuth-Brendon-Lapp", "BAIS3110-OAuth-Brendon-Lapp\BAIS3110-OAuth-Brendon-Lapp.csproj", "{77C61C45-14FE-4D25-8E63-08D5D80F98AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

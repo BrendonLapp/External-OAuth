@@ -5,4 +5,10 @@
     <RootNamespace>BAIS3110_OAuth_Brendon_Lapp</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="bootstrap" Version="4.5.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Octokit" Version="0.48.0" />
+  </ItemGroup>
+
 </Project>

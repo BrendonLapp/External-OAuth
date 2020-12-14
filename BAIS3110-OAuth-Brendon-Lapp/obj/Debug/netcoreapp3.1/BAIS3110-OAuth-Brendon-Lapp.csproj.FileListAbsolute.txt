@@ -36,3 +36,4 @@ C:\Users\b_lap\Documents\GitHub\BAIS3110-OAuth-Brendon-Lapp\External-OAuth\BAIS3
 C:\Users\b_lap\Documents\GitHub\BAIS3110-OAuth-Brendon-Lapp\External-OAuth\BAIS3110-OAuth-Brendon-Lapp\obj\Debug\netcoreapp3.1\BAIS3110-OAuth-Brendon-Lapp.dll
 C:\Users\b_lap\Documents\GitHub\BAIS3110-OAuth-Brendon-Lapp\External-OAuth\BAIS3110-OAuth-Brendon-Lapp\obj\Debug\netcoreapp3.1\BAIS3110-OAuth-Brendon-Lapp.pdb
 C:\Users\b_lap\Documents\GitHub\BAIS3110-OAuth-Brendon-Lapp\External-OAuth\BAIS3110-OAuth-Brendon-Lapp\obj\Debug\netcoreapp3.1\BAIS3110-OAuth-Brendon-Lapp.genruntimeconfig.cache
+C:\Users\b_lap\Documents\GitHub\BAIS3110-OAuth-Brendon-Lapp\External-OAuth\BAIS3110-OAuth-Brendon-Lapp\obj\Debug\netcoreapp3.1\Razor\Pages\Secured\Admin.cshtml.g.cs

@@ -46,6 +46,7 @@ namespace BAIS3110_OAuth_Brendon_Lapp
                 .AddCookie()
                 .AddOAuth("GitHub", options =>
                 {
+                    options.AccessDeniedPath = "/LoginPage";
                     options.ClientId = "5014b4da4378d9e8a5e0";
                     options.ClientSecret = "4cde9f08de1275ef9c95b794e913a4a6165764fa";
                     options.CallbackPath = new PathString("/github-oauth");
@@ -71,7 +72,7 @@ namespace BAIS3110_OAuth_Brendon_Lapp
                             context.RunClaimActions(json.RootElement);
                         }
                     };
-                });
+                })
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -94,6 +95,7 @@ namespace BAIS3110_OAuth_Brendon_Lapp
             app.UseRouting();
 
             app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

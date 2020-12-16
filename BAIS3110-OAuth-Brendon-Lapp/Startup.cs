@@ -92,6 +92,7 @@ namespace BAIS3110_OAuth_Brendon_Lapp
             app.UseRouting();
 
             app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

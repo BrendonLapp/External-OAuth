@@ -1,0 +1,8 @@
+﻿@page
+@model BAIS3110_OAuth_Brendon_Lapp.Pages.PrivacyModel
+@{
+}
+
+<div>
+    @User.Claims.Where(x => x.Type == "urn:github:login").Select(c => c.Value).SingleOrDefault() is authenticated
+</div>

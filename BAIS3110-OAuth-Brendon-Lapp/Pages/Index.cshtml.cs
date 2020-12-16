@@ -20,9 +20,9 @@ namespace BAIS3110_OAuth_Brendon_Lapp.Pages
         {
             if (User.Identity.IsAuthenticated)
             {
-                //string accessToken = await HttpContext.GetTokenAsync("access_token");
-                //var github = new GitHubClient(new ProductHeaderValue("AspNetCoreGitHubAuth"), new InMemoryCredentialStore(new Credentials(accessToken)));
-                //Repositories = await github.Repository.GetAllForCurrent();
+                string accessToken = await HttpContext.GetTokenAsync("access_token");
+                var github = new GitHubClient(new ProductHeaderValue("AspNetCoreGitHubAuth"), new InMemoryCredentialStore(new Credentials(accessToken)));
+                Repositories = await github.Repository.GetAllForCurrent();
                 GitHubName = User.Claims.Where(x => x.Type == "urn:github:login").Select(c => c.Value).SingleOrDefault();
             }
         }

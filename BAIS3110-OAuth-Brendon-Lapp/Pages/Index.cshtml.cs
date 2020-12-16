@@ -18,6 +18,7 @@ namespace BAIS3110_OAuth_Brendon_Lapp.Pages
         public IReadOnlyList<Repository> StarredRepos { get; set; }
         public IReadOnlyList<User> Followers { get; set; }
         public IReadOnlyList<User> Following { get; set; }
+        public string GitHubName { get; set; }
         public async Task OnGetAsync()
         {
             if (User.Identity.IsAuthenticated)
@@ -28,6 +29,7 @@ namespace BAIS3110_OAuth_Brendon_Lapp.Pages
                 StarredRepos = await github.Activity.Starring.GetAllForCurrent();
                 Followers = await github.User.Followers.GetAllForCurrent();
                 Following = await github.User.Followers.GetAllFollowingForCurrent();
+                GitHubName = User.Claims.Where(x => x.Type == "urn:github:login").Select(c => c.Value).SingleOrDefault();
             }
         }
     }

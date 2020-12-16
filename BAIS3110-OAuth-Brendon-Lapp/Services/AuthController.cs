@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-//Namespaces added
-using Microsoft.AspNetCore.Authentication;
+﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BAIS3110_OAuth_Brendon_Lapp.Services
@@ -16,7 +10,7 @@ namespace BAIS3110_OAuth_Brendon_Lapp.Services
     public class AuthController : Controller
     {
         /// <summary>
-        /// Performs a login attempt
+        /// Performs a login attempt against the default challenge scheme
         /// </summary>
         [HttpGet]
         public IActionResult Login(string returnUrl = "/")

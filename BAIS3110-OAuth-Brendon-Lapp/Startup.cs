@@ -53,8 +53,6 @@ namespace BAIS3110_OAuth_Brendon_Lapp
                     options.TokenEndpoint = "https://github.com/login/oauth/access_token";
                     options.UserInformationEndpoint = "https://api.github.com/user";
                     options.SaveTokens = true;
-                    options.ClaimActions.MapJsonKey(ClaimTypes.NameIdentifier, "id");
-                    options.ClaimActions.MapJsonKey(ClaimTypes.Name, "name");
                     options.ClaimActions.MapJsonKey("urn:github:login", "login");
                     options.Events = new OAuthEvents
                     {

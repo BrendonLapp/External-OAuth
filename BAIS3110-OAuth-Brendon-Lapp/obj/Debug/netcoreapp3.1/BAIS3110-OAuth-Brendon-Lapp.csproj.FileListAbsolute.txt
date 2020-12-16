@@ -22,7 +22,6 @@ C:\Users\b_lap\Documents\GitHub\BAIS3110-OAuth-Brendon-Lapp\External-OAuth\BAIS3
 C:\Users\b_lap\Documents\GitHub\BAIS3110-OAuth-Brendon-Lapp\External-OAuth\BAIS3110-OAuth-Brendon-Lapp\obj\Debug\netcoreapp3.1\BAIS3110-OAuth-Brendon-Lapp.TagHelpers.output.cache
 C:\Users\b_lap\Documents\GitHub\BAIS3110-OAuth-Brendon-Lapp\External-OAuth\BAIS3110-OAuth-Brendon-Lapp\obj\Debug\netcoreapp3.1\BAIS3110-OAuth-Brendon-Lapp.RazorCoreGenerate.cache
 C:\Users\b_lap\Documents\GitHub\BAIS3110-OAuth-Brendon-Lapp\External-OAuth\BAIS3110-OAuth-Brendon-Lapp\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
-C:\Users\b_lap\Documents\GitHub\BAIS3110-OAuth-Brendon-Lapp\External-OAuth\BAIS3110-OAuth-Brendon-Lapp\obj\Debug\netcoreapp3.1\Razor\Pages\LoginPage.cshtml.g.cs
 C:\Users\b_lap\Documents\GitHub\BAIS3110-OAuth-Brendon-Lapp\External-OAuth\BAIS3110-OAuth-Brendon-Lapp\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
 C:\Users\b_lap\Documents\GitHub\BAIS3110-OAuth-Brendon-Lapp\External-OAuth\BAIS3110-OAuth-Brendon-Lapp\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\b_lap\Documents\GitHub\BAIS3110-OAuth-Brendon-Lapp\External-OAuth\BAIS3110-OAuth-Brendon-Lapp\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs

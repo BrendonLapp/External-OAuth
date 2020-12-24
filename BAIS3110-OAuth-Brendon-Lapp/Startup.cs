@@ -12,13 +12,11 @@ using Microsoft.Extensions.Hosting;
 //Name Spaces added for GitHub OAuth
 using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Security.Claims;
 using System.Text.Json;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OAuth;
 using Microsoft.AspNetCore.Http;
-using Newtonsoft.Json.Linq;
 
 namespace BAIS3110_OAuth_Brendon_Lapp
 {

@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "PwkdSy6MIPsZVAG3/DRez1OMHBGzRCs2d/dlpdGMeASb4s1WDBCKbSoTXRW+9+1Qr1d3S2HPkzk4YkrTvCSV+A==",
+  "dgSpecHash": "RAhMvWWpmc+szxTNgW2wiD8eEFM8HOidJ8337NzKWwaYHSO8tDycxeWtRkh4ocscjaml/ychyxVBmWSHl1HIog==",
   "success": true,
   "projectFilePath": "C:\\Users\\b_lap\\Documents\\GitHub\\BAIS3110-OAuth-Brendon-Lapp\\External-OAuth\\BAIS3110-OAuth-Brendon-Lapp\\BAIS3110-OAuth-Brendon-Lapp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\b_lap\\.nuget\\packages\\bootstrap\\4.5.3\\bootstrap.4.5.3.nupkg.sha512",
     "C:\\Users\\b_lap\\.nuget\\packages\\jquery\\3.0.0\\jquery.3.0.0.nupkg.sha512",
     "C:\\Users\\b_lap\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\b_lap\\.nuget\\packages\\octokit\\0.48.0\\octokit.0.48.0.nupkg.sha512",
     "C:\\Users\\b_lap\\.nuget\\packages\\popper.js\\1.16.1\\popper.js.1.16.1.nupkg.sha512"
   ],
   "logs": []
